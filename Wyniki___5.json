@@ -1,0 +1,591 @@
+{ _id: ObjectId("60d3c63841c31d5d921bf602"),
+  first_name: 'Anthony',
+  last_name: 'Nichols' }
+{ _id: ObjectId("60d3c63841c31d5d921bf604"),
+  first_name: 'Brenda',
+  last_name: 'Gonzalez' }
+{ _id: ObjectId("60d3c63841c31d5d921bf60d"),
+  first_name: 'Ernest',
+  last_name: 'Ortiz' }
+{ _id: ObjectId("60d3c63841c31d5d921bf611"),
+  first_name: 'Gregory',
+  last_name: 'Anderson' }
+{ _id: ObjectId("60d3c63841c31d5d921bf616"),
+  first_name: 'Ralph',
+  last_name: 'Austin' }
+{ _id: ObjectId("60d3c63841c31d5d921bf623"),
+  first_name: 'Paula',
+  last_name: 'Hunt' }
+{ _id: ObjectId("60d3c63841c31d5d921bf624"),
+  first_name: 'Virginia',
+  last_name: 'Chapman' }
+{ _id: ObjectId("60d3c63841c31d5d921bf629"),
+  first_name: 'Steve',
+  last_name: 'Olson' }
+{ _id: ObjectId("60d3c63841c31d5d921bf62d"),
+  first_name: 'Anthony',
+  last_name: 'Wood' }
+{ _id: ObjectId("60d3c63841c31d5d921bf639"),
+  first_name: 'Eugene',
+  last_name: 'Ford' }
+{ _id: ObjectId("60d3c63841c31d5d921bf63b"),
+  first_name: 'Nancy',
+  last_name: 'Fisher' }
+{ _id: ObjectId("60d3c63841c31d5d921bf643"),
+  first_name: 'Stephanie',
+  last_name: 'Porter' }
+{ _id: ObjectId("60d3c63841c31d5d921bf648"),
+  first_name: 'Jacqueline',
+  last_name: 'Morgan' }
+{ _id: ObjectId("60d3c63841c31d5d921bf64a"),
+  first_name: 'Amy',
+  last_name: 'Banks' }
+{ _id: ObjectId("60d3c63841c31d5d921bf64f"),
+  first_name: 'Virginia',
+  last_name: 'Mills' }
+{ _id: ObjectId("60d3c63841c31d5d921bf652"),
+  first_name: 'Deborah',
+  last_name: 'Moreno' }
+{ _id: ObjectId("60d3c63841c31d5d921bf656"),
+  first_name: 'Jason',
+  last_name: 'Banks' }
+{ _id: ObjectId("60d3c63841c31d5d921bf658"),
+  first_name: 'Patrick',
+  last_name: 'Moore' }
+{ _id: ObjectId("60d3c63841c31d5d921bf659"),
+  first_name: 'Wanda',
+  last_name: 'Burton' }
+{ _id: ObjectId("60d3c63841c31d5d921bf65b"),
+  first_name: 'Russell',
+  last_name: 'Bryant' }
+Type "it" for more
+db.people.find(
+  {
+    "birth_date": {
+      $gte:("2001"), 
+      $lt: ("2100")
+    }
+  }, 
+  { "first_name": 1, "last_name": 1, "city": 1 }
+  ).toArray;
+[Function: toArray] {
+  returnsPromise: true,
+  serverVersions: [ '0.0.0', '999.999.999' ],
+  topologies: [ 0, 2, 1 ],
+  returnType: { type: 'unknown', attributes: {} },
+  deprecated: false,
+  platforms: [ 0, 1, 2 ],
+  help: [Function] Help
+}
+db.people.find(
+  {
+    "birth_date": {
+      $gte:("2001"), 
+      $lt: ("2100")
+    }
+  }, 
+  { "first_name": 1, "last_name": 1, "city": 1 }
+  ).toArray();
+[
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf602"),
+    first_name: 'Anthony',
+    last_name: 'Nichols'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf604"),
+    first_name: 'Brenda',
+    last_name: 'Gonzalez'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf60d"),
+    first_name: 'Ernest',
+    last_name: 'Ortiz'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf611"),
+    first_name: 'Gregory',
+    last_name: 'Anderson'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf616"),
+    first_name: 'Ralph',
+    last_name: 'Austin'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf623"),
+    first_name: 'Paula',
+    last_name: 'Hunt'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf624"),
+    first_name: 'Virginia',
+    last_name: 'Chapman'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf629"),
+    first_name: 'Steve',
+    last_name: 'Olson'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf62d"),
+    first_name: 'Anthony',
+    last_name: 'Wood'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf639"),
+    first_name: 'Eugene',
+    last_name: 'Ford'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf63b"),
+    first_name: 'Nancy',
+    last_name: 'Fisher'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf643"),
+    first_name: 'Stephanie',
+    last_name: 'Porter'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf648"),
+    first_name: 'Jacqueline',
+    last_name: 'Morgan'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf64a"),
+    first_name: 'Amy',
+    last_name: 'Banks'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf64f"),
+    first_name: 'Virginia',
+    last_name: 'Mills'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf652"),
+    first_name: 'Deborah',
+    last_name: 'Moreno'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf656"),
+    first_name: 'Jason',
+    last_name: 'Banks'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf658"),
+    first_name: 'Patrick',
+    last_name: 'Moore'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf659"),
+    first_name: 'Wanda',
+    last_name: 'Burton'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf65b"),
+    first_name: 'Russell',
+    last_name: 'Bryant'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf662"),
+    first_name: 'Patrick',
+    last_name: 'Myers'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf663"),
+    first_name: 'Joshua',
+    last_name: 'Coleman'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf668"),
+    first_name: 'Catherine',
+    last_name: 'Jackson'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf66a"),
+    first_name: 'Ronald',
+    last_name: 'Taylor'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf676"),
+    first_name: 'Maria',
+    last_name: 'Scott'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf677"),
+    first_name: 'Harold',
+    last_name: 'Webb'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf682"),
+    first_name: 'Julia',
+    last_name: 'Morgan'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf683"),
+    first_name: 'Andrew',
+    last_name: 'Black'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf684"),
+    first_name: 'Charles',
+    last_name: 'Rivera'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf687"),
+    first_name: 'Eugene',
+    last_name: 'Long'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf68a"),
+    first_name: 'Christopher',
+    last_name: 'Fields'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf68e"),
+    first_name: 'John',
+    last_name: 'Banks'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf697"),
+    first_name: 'Ronald',
+    last_name: 'Kennedy'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf698"),
+    first_name: 'Janice',
+    last_name: 'Cooper'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf69d"),
+    first_name: 'Nancy',
+    last_name: 'Medina'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6bc"),
+    first_name: 'Elizabeth',
+    last_name: 'Howard'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6ca"),
+    first_name: 'Kathleen',
+    last_name: 'Martinez'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6ce"),
+    first_name: 'Larry',
+    last_name: 'Bennett'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6d3"),
+    first_name: 'Mary',
+    last_name: 'Armstrong'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6d4"),
+    first_name: 'Charles',
+    last_name: 'Jordan'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6d7"),
+    first_name: 'Karen',
+    last_name: 'Matthews'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6d9"),
+    first_name: 'Gerald',
+    last_name: 'Williamson'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6db"),
+    first_name: 'Irene',
+    last_name: 'Butler'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6ea"),
+    first_name: 'Teresa',
+    last_name: 'Allen'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6ee"),
+    first_name: 'William',
+    last_name: 'Richardson'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6f0"),
+    first_name: 'Tina',
+    last_name: 'Gordon'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf6fa"),
+    first_name: 'Mildred',
+    last_name: 'Burns'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf700"),
+    first_name: 'Carlos',
+    last_name: 'Ellis'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf703"),
+    first_name: 'Marie',
+    last_name: 'Fowler'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf705"),
+    first_name: 'Ruby',
+    last_name: 'Meyer'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf708"),
+    first_name: 'Judy',
+    last_name: 'Washington'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf70b"),
+    first_name: 'Samuel',
+    last_name: 'Johnson'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf719"),
+    first_name: 'Virginia',
+    last_name: 'James'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf71a"),
+    first_name: 'Jean',
+    last_name: 'Montgomery'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf71b"),
+    first_name: 'Sean',
+    last_name: 'Lawson'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf71f"),
+    first_name: 'Anthony',
+    last_name: 'White'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf727"),
+    first_name: 'Craig',
+    last_name: 'Romero'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf735"),
+    first_name: 'Bruce',
+    last_name: 'Spencer'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf73d"),
+    first_name: 'Lois',
+    last_name: 'Lewis'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf743"),
+    first_name: 'Matthew',
+    last_name: 'Phillips'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf74a"),
+    first_name: 'Deborah',
+    last_name: 'Alexander'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf762"),
+    first_name: 'Steve',
+    last_name: 'Fields'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf766"),
+    first_name: 'Janice',
+    last_name: 'Rose'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf771"),
+    first_name: 'Phyllis',
+    last_name: 'Cole'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf774"),
+    first_name: 'Joseph',
+    last_name: 'Wallace'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf777"),
+    first_name: 'Lois',
+    last_name: 'Moore'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf77e"),
+    first_name: 'Frances',
+    last_name: 'Lane'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf782"),
+    first_name: 'Willie',
+    last_name: 'Evans'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf783"),
+    first_name: 'Carolyn',
+    last_name: 'Crawford'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf78f"),
+    first_name: 'John',
+    last_name: 'Fisher'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf799"),
+    first_name: 'Raymond',
+    last_name: 'Shaw'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf79b"),
+    first_name: 'Juan',
+    last_name: 'Garza'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf79e"),
+    first_name: 'Jeremy',
+    last_name: 'Meyer'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7a3"),
+    first_name: 'Teresa',
+    last_name: 'Hawkins'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7a4"),
+    first_name: 'Brenda',
+    last_name: 'Butler'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7b1"),
+    first_name: 'Samuel',
+    last_name: 'Jenkins'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7be"),
+    first_name: 'Donna',
+    last_name: 'Barnes'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7c7"),
+    first_name: 'Phyllis',
+    last_name: 'Watson'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7ca"),
+    first_name: 'Kelly',
+    last_name: 'Dunn'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7d1"),
+    first_name: 'Julia',
+    last_name: 'Reyes'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7e2"),
+    first_name: 'Larry',
+    last_name: 'Dean'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7e4"),
+    first_name: 'Philip',
+    last_name: 'Crawford'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7e8"),
+    first_name: 'Mark',
+    last_name: 'Torres'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf7f3"),
+    first_name: 'Thomas',
+    last_name: 'Bowman'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf802"),
+    first_name: 'Susan',
+    last_name: 'Griffin'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf803"),
+    first_name: 'Alan',
+    last_name: 'Nichols'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf80e"),
+    first_name: 'Wanda',
+    last_name: 'Washington'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf80f"),
+    first_name: 'Tammy',
+    last_name: 'Reynolds'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf811"),
+    first_name: 'Matthew',
+    last_name: 'Wells'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf812"),
+    first_name: 'Daniel',
+    last_name: 'Knight'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf81b"),
+    first_name: 'Adam',
+    last_name: 'Wood'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf820"),
+    first_name: 'Lillian',
+    last_name: 'Gonzalez'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf82f"),
+    first_name: 'Jose',
+    last_name: 'Harper'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf833"),
+    first_name: 'Bobby',
+    last_name: 'Oliver'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf83d"),
+    first_name: 'Ronald',
+    last_name: 'Ferguson'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf840"),
+    first_name: 'Marie',
+    last_name: 'Carroll'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf84e"),
+    first_name: 'Gary',
+    last_name: 'Bailey'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf856"),
+    first_name: 'Maria',
+    last_name: 'Hunt'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf859"),
+    first_name: 'Robert',
+    last_name: 'Burton'
+  },
+  {
+    _id: ObjectId("60d3c63841c31d5d921bf85a"),
+    first_name: 'Benjamin',
+    last_name: 'Romero'
+  },
+  ... 1738 more items
+]
