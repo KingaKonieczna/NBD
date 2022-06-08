@@ -1,0 +1,91 @@
+import sys
+import os
+import requests
+from requests.exceptions import HTTPError
+import json
+
+headers = {'Content-Type': 'application/json',}
+folder = '/Users/Admin/Desktop/NBD6/komunikaty.txt'
+
+#wrzucenie do bazy
+
+document = '{"name":"Ola","stamina":21,"3":3.0,"4":1,"new":42}'
+query = 'http://127.0.0.1:8098/buckets/s22781/keys/doc'
+
+try:
+    response = requests.put(query, headers=headers, data=document)
+    response.raise_for_status()
+except HTTPError as http_err:
+    print(f'HTTP error occurred: {http_err}')
+except Exception as err:
+    print(f'Other error occurred: {err}')
+else:
+    print('Done', response)
+    
+#pobranie i wypisanie
+
+try:
+    response = requests.get(query, headers=headers)
+    response.raise_for_status()
+except HTTPError as http_err:
+    print(f'HTTP error occurred: {http_err}')
+except Exception as err:
+    print(f'Other error occurred: {err}')
+else:
+    print('Done', response)
+    print('Server answer: ',response.text)
+
+#modyfikacja
+
+new_document = '{"name":"Ola","stamina":21,"3":3.0,"4":1,"new":50}'
+query = 'http://127.0.0.1:8098/buckets/s22781/keys/doc'
+
+try:
+    response = requests.put(query, headers=headers, data=new_document)
+    response.raise_for_status()
+except HTTPError as http_err:
+    print(f'HTTP error occurred: {http_err}')
+except Exception as err:
+    print(f'Other error occurred: {err}')
+else:
+    print('Done', response)
+
+#pobranie i wypisanie
+
+try:
+    response = requests.get(query, headers=headers)
+    response.raise_for_status()
+except HTTPError as http_err:
+    print(f'HTTP error occurred: {http_err}')
+except Exception as err:
+    print(f'Other error occurred: {err}')
+else:
+    print('Done', response)
+    print('Server answer: ',response.text)
+
+#usunięcie
+    
+try:
+    response = requests.delete(query, headers=headers)
+    response.raise_for_status()
+except HTTPError as http_err:
+    print(f'HTTP error occurred: {http_err}')
+except Exception as err:
+    print(f'Other error occurred: {err}')
+else:
+    print('Done', response)
+    
+#pobranie nieistniejącego dokumentu i wypisanie
+
+try:
+    response = requests.get(query, headers=headers)
+    response.raise_for_status()
+except HTTPError as http_err:
+    print(f'HTTP error occurred: {http_err}')
+except Exception as err:
+    print(f'Other error occurred: {err}')
+else:
+    print('Done', response)
+    print('Server answer: ',response.text)
+
+

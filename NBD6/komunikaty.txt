@@ -1,0 +1,25 @@
+#wrzucenie
+
+Done <Response [204]>
+
+#pobranie i wypisanie
+
+Done <Response [200]>
+Server answer:  {"name":"Ola","stamina":21,"3":3.0,"4":1,"new":42}
+
+#modyfikacja 
+
+Done <Response [204]>
+
+#pobranie dokumentu z bazy i wypisanie
+
+Done <Response [200]>
+Server answer:  {"name":"Ola","stamina":21,"3":3.0,"4":1,"new":50}
+
+#usunięcie z bazy
+
+Done <Response [204]>
+
+#pobranie nieistniejącego dokumentu i wypisanie
+
+HTTP error occurred: 404 Client Error: Object Not Found for url: http://127.0.0.1:8098/buckets/s22781/keys/doc
