@@ -1,0 +1,64 @@
+'{name:Kinga,stamina:21,3:3.0,4:null}'
+C:\Users\Admin>curl -i -XPUT -d '{"name":"Karolina","stamina":20,"3":7.0,"4":2}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc2?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8J9gnVoYlxU6ACCUy5bEyzIwSvcOXBQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s22781>; rel="up"
+Last-Modified: Wed, 08 Jun 2022 17:38:33 GMT
+ETag: "3D3QDXJiaS9xCI4Fz9rrEH"
+Date: Wed, 08 Jun 2022 17:38:33 GMT
+Content-Type: application/json
+Content-Length: 38
+
+'{name:Karolina,stamina:20,3:7.0,4:2}'
+C:\Users\Admin>curl -i -XPUT -d '{"name":"Sylwia","stamina":39,"3":12.0,"4":null}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc3?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8J9gnVoYltQlChBKZ8lgZZkaJ3uHLAgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s22781>; rel="up"
+Last-Modified: Wed, 08 Jun 2022 17:38:33 GMT
+ETag: "77spCb07Xq32ivDzB60p66"
+Date: Wed, 08 Jun 2022 17:38:33 GMT
+Content-Type: application/json
+Content-Length: 40
+
+'{name:Sylwia,stamina:39,3:12.0,4:null}'
+C:\Users\Admin>curl -i -XPUT -d '{"name":"Martyna","stamina":3,"3":0.76,"4":"a"}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc4?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8J9gnVoaliuhBhBKZ81gZZkWJ3uHLAgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s22781>; rel="up"
+Last-Modified: Wed, 08 Jun 2022 17:38:34 GMT
+ETag: "2yGMs0MM0QGgKoErcScpij"
+Date: Wed, 08 Jun 2022 17:38:34 GMT
+Content-Type: application/json
+Content-Length: 37
+
+'{name:Martyna,stamina:3,3:0.76,4:a}'
+C:\Users\Admin>curl -i -XPUT -d '{"name":"Marcelina","stamina":45,"3":4.20,"4":null}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc5?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8J9gnVoalqLBBhBIZ81gZVkaJ3uHLAgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s22781>; rel="up"
+Last-Modified: Wed, 08 Jun 2022 17:38:49 GMT
+ETag: "7DR50H4pLrfQedgOg2LAyN"
+Date: Wed, 08 Jun 2022 17:38:49 GMT
+Content-Type: application/json
+Content-Length: 43
+
+'{name:Marcelina,stamina:45,3:4.20,4:null}'
+C:\Users\Admin>curl -i -XPUT -d '{"name":"Marcelina","stamina":45,"3":4.20,"4":null}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc5?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8J9gnVoalqLBBhBKZ8lgZPGJE7/BlAQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s22781>; rel="up"
+Last-Modified: Wed, 08 Jun 2022 17:45:44 GMT
+ETag: "1EaKOjLL4mKIfQ3cWFHu8Y"
+Date: Wed, 08 Jun 2022 17:45:44 GMT
+Content-Type: application/json
+Content-Length: 43

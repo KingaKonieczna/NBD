@@ -1,0 +1,8 @@
+C:\Users\Admin>curl -i http://127.0.0.1:8098/buckets/s22781/keys/doc1
+HTTP/1.1 404 Object Not Found
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Wed, 08 Jun 2022 18:14:09 GMT
+Content-Type: text/plain
+Content-Length: 10
+
+not found

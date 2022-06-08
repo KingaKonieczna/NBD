@@ -1,0 +1,8 @@
+C:\Users\Admin>curl -i -XPOST -d '{"value":"new"}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s22781/keys/26h3P2MbODV7ynrFme7LvkuG4r6
+Date: Wed, 08 Jun 2022 18:15:18 GMT
+Content-Type: application/json
+Content-Length: 0

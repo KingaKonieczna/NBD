@@ -1,0 +1,7 @@
+C:\Users\Admin>curl -i -XDELETE http://localhost:8098/buckets/s22781/keys/26h3P2MbODV7ynrFme7LvkuG4r6
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Wed, 08 Jun 2022 18:17:14 GMT
+Content-Type: application/json
+Content-Length: 0

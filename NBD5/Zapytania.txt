@@ -1,0 +1,23 @@
+1. curl -i -XPUT -d '{"name":"Kinga","stamina":21,"3":3.0,"4":null}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc1?returnbody=true
+curl -i -XPUT -d '{"name":"Karolina","stamina":20,"3":7.0,"4":2}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc2?returnbody=true
+curl -i -XPUT -d '{"name":"Sylwia","stamina":39,"3":12.0,"4":null}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc3?returnbody=true
+curl -i -XPUT -d '{"name":"Martyna","stamina":3,"3":0.76,"4":"a"}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc4?returnbody=true
+curl -i -XPUT -d '{"name":"Marcelina","stamina":45,"3":4.20,"4":null}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc5?returnbody=true
+
+2. curl -i http://127.0.0.1:8098/buckets/s22781/keys/doc1
+
+3. curl -i -XPUT -d '{"name":"Kinga","stamina":21,"3":3.0,"4":null,"new":42}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc1?returnbody=true
+
+4. curl -i -XPUT -d '{"name":"Kinga","stamina":21,"3":3.0,"new":42}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc1?returnbody=true
+
+5. curl -i -XPUT -d '{"name":"Kinga","stamina":21,"3":3.0,"new":69}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys/doc1?returnbody=true
+
+6. curl -i -XDELETE http://localhost:8098/buckets/s22781/keys/doc1
+
+7. curl -i http://127.0.0.1:8098/buckets/s22781/keys/doc1
+
+8. curl -i -XPOST -d '{"value":"new"}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s22781/keys
+
+9. curl -i http://127.0.0.1:8098/buckets/s22781/keys/26h3P2MbODV7ynrFme7LvkuG4r6
+
+10. curl -i -XDELETE http://localhost:8098/buckets/s22781/keys/26h3P2MbODV7ynrFme7LvkuG4r6
